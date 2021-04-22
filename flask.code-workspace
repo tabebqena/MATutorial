@@ -1,0 +1,95 @@
+{
+    "extensions": {
+        "recommendations": [
+            "steoates.autoimport",
+            "formulahendry.auto-rename-tag",
+            "samuelcolvin.jinjahtml",
+            "dbaeumer.vscode-eslint",
+            "ms-toolsai.jupyter",
+            "cweijan.vscode-mysql-client2",
+            "ionutvmi.path-autocomplete",
+            "ms-python.vscode-pylance",
+            "ms-python.python",
+            "njpwerner.autodocstring",
+            "tushortz.python-extended-snippets",
+            "mgesbert.python-path",
+            "janbn.time-tracker-and-reminder",
+            "fabiospampinato.vscode-todo-plus",
+            "dskwrk.vscode-generate-getter-setter",
+            "baileyfirman.vscode-back-forward-buttons",
+            "genuitecllc.codetogether"
+        ]
+    },
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "[html]": {
+            "editor.defaultFormatter": "vscode.html-language-features"
+        },
+        "[json]": {
+            "editor.defaultFormatter": "vscode.json-language-features"
+        },
+        "[python]": {
+            "editor.defaultFormatter": "ms-python.python"
+        },
+        "autoDocstring.docstringFormat": "sphinx",
+        "autoDocstring.includeExtendedSummary": true,
+        "autoDocstring.includeName": true,
+        "autoDocstring.startOnNewLine": true,
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.formatOnType": true,
+        "git.autofetch": true,
+        "html.format.contentUnformatted": "pre,code,textarea",
+        "html.format.indentHandlebars": true,
+        "html.format.indentInnerHtml": true,
+        "python.analysis.completeFunctionParens": true,
+        "python.analysis.diagnosticMode": "workspace",
+        "python.analysis.extraPaths": [
+            "./myvenv/lib/python3.8/site-packages/",
+            "./myvenv/lib64/python3.8/site-packages/",
+            "./myvenv/share/python-wheels/",
+            "./project/"
+        ],
+        "python.analysis.typeCheckingMode": "basic",
+        "python.autoComplete.extraPaths": [
+            "./myvenv/lib/python3.8/site-packages/",
+            "./myvenv/lib64/python3.8/site-packages/",
+            "./myvenv/share/python-wheels/",
+            "./project/"
+        ],
+        "python.disableInstallationCheck": true,
+        "python.envFile": "${workspaceFolder}/.env",
+        "python.languageServer": "Pylance",
+        "python.linting.pylintEnabled": false,
+        "python.linting.flake8Enabled": true,
+        "python.linting.enabled": true,
+        "python.formatting.provider": "black",
+        "python.linting.mypyCategorySeverity.error": "Hint",
+        "python.linting.mypyEnabled": true,
+        "python.pythonPath": "myvenv/bin/python3",
+        "python.analysis.indexing": true,
+        "python.terminal.activateEnvInCurrentTerminal": true,
+        "python.testing.autoTestDiscoverOnSaveEnabled": false,
+        "python.testing.nosetestsEnabled": false,
+        "python.testing.pytestArgs": [
+            "project"
+        ],
+        "python.testing.pytestEnabled": true,
+        "python.testing.unittestEnabled": false,
+        "time-tracker.reminders": "[{\"title\": \"Blink\",\"intervalMinutes\": 50,\"pauseMinutes\": 0,\"autoPause\": true,\"showCountDown\": true,\"autoStartAfterPause\": true},{\"title\": \"Look at distance\",\"intervalMinutes\": 180,\"pauseMinutes\": 0,\"autoPause\": true,\"showCountDown\": true,\"autoStartAfterPause\": true}]",
+        "time-tracker.showFromStartTime": true,
+        "time-tracker.showTotalTime": true,
+        "window.zoomLevel": 0,
+        "workbench.colorTheme": "Default Dark+",
+        "workbench.editorAssociations": [
+            {
+                "filenamePattern": "*.ipynb",
+                "viewType": "jupyter.notebook.ipynb"
+            }
+        ],
+        "editor.formatOnSave": true
+    }
+}

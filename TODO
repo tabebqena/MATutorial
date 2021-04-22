@@ -1,0 +1,48 @@
+Todo:
+  ☐ Install Virtual enviroment
+  ☐ copy workspace file into the folder
+  ☐ select python interpreter, check it
+  ☐ Install all vscode recommended extensions, disable others. 
+     
+  ☐ Install pipenv
+  ☐ copy pipfile
+  ☐ sync using pipfile 
+  ☐ freeze requirements file
+  ☐ restart and install all recommenditions from vscode using pipenv (already installed from pipfile, but mention)
+  ☐ create project module, app.py , and run it. 
+    ☐ env var
+    ☐ flask run 
+    ☐ python app.py
+  ☐ use pythondotenv
+  ☐ store vars in .env file and test
+  
+  ☐ routing 
+    ☐ create many routes
+    ☐ seperate in file
+    ☐ use parametrized route
+    ☐ return "string", json, render_remplate(plain, no var)
+  ☐ create fake tests.
+  ☐ redirect from url to another 
+  ☐ use url_for
+  ☐ redirect using url_for
+  ☐ render templates using var.
+  ☐ use static in templates.
+  ☐ access request methods (get, post, put, post, delete)
+  ☐ create fake db (dictionary).
+
+  ☐ flash messages
+  ☐ access  request, session and g from templates and from code.
+  ☐ more about request
+  ☐ create secret key and store in config 
+  ☐ secret key necessary to access session>
+  ☐ more about session 
+  ☐ more about g
+  ☐ more about request cookies
+  ☐ abort by errors
+  ☐ error handlers
+  ☐ more about response 
+  ☐ more about simple api  
+  ☐ config dilemma, where to store
+  
+  ☐ use sqlite db queruies (create table, insert, update, select, delete).
+  ☐ use sql alchemy
