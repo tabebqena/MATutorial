@@ -69,7 +69,7 @@
         "python.formatting.provider": "black",
         "python.linting.mypyCategorySeverity.error": "Hint",
         "python.linting.mypyEnabled": true,
-        "python.pythonPath": "myvenv/bin/python3",
+        "python.pythonPath": "myvenv/bin/python",
         "python.analysis.indexing": true,
         "python.terminal.activateEnvInCurrentTerminal": true,
         "python.testing.autoTestDiscoverOnSaveEnabled": false,
