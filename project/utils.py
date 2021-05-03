@@ -27,3 +27,7 @@ def update_students_data(new_data):
     website_data["students"] = new_data
     with open("data.json", "w") as f:
         f.write(json.dumps(website_data, indent=4))
+
+
+def sum(x, y):
+    return x + y

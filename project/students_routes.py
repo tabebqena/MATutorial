@@ -1,6 +1,6 @@
 from flask import request, jsonify, current_app as app
 
-from utils import get_data, update_students_data, get_random_id
+from .utils import get_data, update_students_data, get_random_id
 import http
 
 

@@ -1,27 +1,24 @@
 Todo:
-  ☐ Install Virtual enviroment
-  ☐ copy workspace file into the folder
-  ☐ select python interpreter, check it
-  ☐ Install all vscode recommended extensions, disable others. 
+  Install Virtual enviroment
+  copy workspace file into the folder
+  select python interpreter, check it
+  Install all vscode recommended extensions, disable others. 
      
-  ☐ Install pipenv
-  ☐ copy pipfile
-  ☐ sync using pipfile 
-  ☐ freeze requirements file
-  ☐ restart and install all recommenditions from vscode using pipenv (already installed from pipfile, but mention)
-  ☐ create project module, app.py , and run it. 
-    ☐ env var
-    ☐ flask run 
-    ☐ python app.py
-  ☐ use pythondotenv
-  ☐ store vars in .env file and test
+  ✔ freeze requirements file @done(21-05-03 16:45)
+  ✔ restart and install all recommenditions from vscode using pipenv (already installed from pipfile, but mention) @done(21-05-03 16:46)
+  ✔ create project module, app.py , and run it. @done(21-05-03 16:46)
+    ✔ env var @done(21-05-03 16:47)
+    ✔ flask run @done(21-05-03 16:47)
+    ✔ python app.py @done(21-05-03 16:47)
+  ✔ use pythondotenv @done(21-05-03 16:46)
+  ✔ store vars in .env file and test @done(21-05-03 16:46)
   
-  ☐ routing 
+  ✔ routing @done(21-05-03 16:46)
     ☐ create many routes
     ☐ seperate in file
     ☐ use parametrized route
     ☐ return "string", json, render_remplate(plain, no var)
-  ☐ create fake tests.
+  ✔ create fake tests. @done(21-05-03 16:46)
   ☐ redirect from url to another 
   ☐ use url_for
   ☐ redirect using url_for

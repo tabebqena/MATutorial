@@ -1,6 +1,6 @@
 import http
 from flask import Flask
-from utils import check_db_file
+from .utils import check_db_file
 
 
 # Automated test
@@ -14,7 +14,8 @@ def create_app(config=None) -> Flask:
 
     app.app_context().push()
 
-    import students_routes
+    # don't delete this line.
+    from .students_routes import student_info
 
     @app.route("/index")
     @app.route("/")
