@@ -1,4 +1,6 @@
-from flask import request, jsonify, current_app as app
+from flask import request, jsonify, abort
+
+from flask import current_app as app
 
 from .utils import get_data, update_students_data, get_random_id
 import http
@@ -48,6 +50,7 @@ def student_info(id):
             update_students_data(students_data)
             return jsonify({"state": "updated"}), http.HTTPStatus.OK
         else:
+            # abort(http.HTTPStatus.BAD_REQUEST, f"No student with this {id}")
             return jsonify({"state": "Error"}), http.HTTPStatus.BAD_REQUEST
     elif request.method == "DELETE":
         if students_data.get(id, None):
