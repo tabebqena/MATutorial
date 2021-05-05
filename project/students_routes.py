@@ -6,20 +6,23 @@ from .utils import get_data, update_students_data, get_random_id
 import http
 
 
-@app.route("/students")
+@app.route("/students", methods=["GET"])
 def students():
     # show list of all students
     return get_data()["students"], http.HTTPStatus.OK
 
 
-@app.route("/students/new", methods=["PUT"])
+@app.route("/students", methods=["PUT"])
 def add_student():
     students_data = get_data()["students"]
     info = request.form
 
     # TODO FIX: more accurate validator
     if len(info) == 0:
-        return jsonify({"state": "Error"}), http.HTTPStatus.NO_CONTENT
+        return (
+            jsonify({"state": "Error"}),
+            http.HTTPStatus.NOT_ACCEPTABLE,
+        )  # http.HTTPStatus.NO_CONTENT
 
     # TODO add checker function to ensure no duplicate id.
     id = None
@@ -58,7 +61,7 @@ def update_student(id):
         return jsonify({"state": "Error"}), http.HTTPStatus.BAD_REQUEST
 
 
-@app.route("/students/<string: id>", methods=["DELETE"])
+@app.route("/students/<string:id>", methods=["DELETE"])
 def delete_student(id):
     students_data = get_data()["students"]
     if students_data.get(id, None):

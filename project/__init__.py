@@ -1,21 +1,27 @@
 import http
 from flask import Flask
+
+from gevent import config
 from .utils import check_db_file
 
 
 # Automated test
 # add materials
+# { defa }
 
 
-def create_app(config=None) -> Flask:
+def create_app(custom_config={}) -> Flask:
+    app: Flask = Flask(__name__)
+    app.app_context().push()
+    # store the custom config in the app.config
+    app.config.update(custom_config)
+    if app.config.get("db", None) is None:
+        app.config["db"] = "data.json"
+
     check_db_file()
 
-    app: Flask = Flask(__name__)
-
-    app.app_context().push()
-
     # don't delete this line.
-    from .students_routes import student_info
+    from .students_routes import get_student_info
 
     @app.route("/index")
     @app.route("/")

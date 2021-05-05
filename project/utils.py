@@ -9,27 +9,34 @@ def get_random_id(length=1):
     return secrets.token_hex(length)
 
 
-# 10 + 28 = 38 * 38 = 1444 ... 1445
-
-
 def check_db_file():
-    if not os.path.exists("data.json"):
-        f = open("data.json", "w")
+    from flask import current_app as app
+
+    db = app.config.get("db") or ""
+    if not os.path.exists(db):
+        f = open(db, "w")
         default_data = {"students": {}, "material": {}}
         f.write(json.dumps(default_data, indent=4))
         f.close()
 
 
 def get_data():
-    with open("data.json", "r") as f:
+    from flask import current_app as app
+
+    db = app.config.get("db") or ""
+    with open(db, "r") as f:
         data = f.read()
         return json.loads(data)
 
 
 def update_students_data(new_data):
+    from flask import current_app as app
+
+    db = app.config.get("db") or ""
+
     website_data = get_data()
     website_data["students"] = new_data
-    with open("data.json", "w") as f:
+    with open(db, "w") as f:
         f.write(json.dumps(website_data, indent=4))
 
 
